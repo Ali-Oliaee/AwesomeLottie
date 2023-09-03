@@ -5,6 +5,10 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#fff',
   },
+  darkTheme: {
+    backgroundColor: '#455',
+    color: '#fff',
+  },
   row: {
     width: '100%',
     flexDirection: 'row',

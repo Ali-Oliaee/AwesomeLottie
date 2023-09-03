@@ -3,8 +3,10 @@ import {StyleSheet} from 'react-native';
 const styles = StyleSheet.create({
   container: {
     borderWidth: 1,
+    borderColor: '#ddd',
     borderRadius: 12,
     width: '90%',
+    color: '#ddd',
     height: 54,
     alignSelf: 'center',
     position: 'relative',
@@ -13,6 +15,7 @@ const styles = StyleSheet.create({
     height: 54,
     paddingStart: 12,
     fontSize: 18,
+    color: '#ddd',
   },
   hideButton: {
     position: 'absolute',

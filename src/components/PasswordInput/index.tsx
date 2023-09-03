@@ -27,7 +27,12 @@ const PasswordInput = () => {
 
   return (
     <View style={styles.container}>
-      <TextInput secureTextEntry={isHide} style={styles.input} />
+      <TextInput
+        secureTextEntry={isHide}
+        style={styles.input}
+        placeholderTextColor="#ddd"
+        placeholder="Password"
+      />
       <TouchableOpacity
         activeOpacity={1}
         onPress={() => setIsHide(!isHide)}

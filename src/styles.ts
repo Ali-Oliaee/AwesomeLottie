@@ -8,6 +8,8 @@ const styles = StyleSheet.create({
   row: {
     width: '100%',
     flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
     paddingHorizontal: 4,
   },
   title: {

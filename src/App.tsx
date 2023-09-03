@@ -5,6 +5,7 @@ import LikeButton from './components/LikeButton';
 import styles from './styles';
 import PlayButton from './components/PlayButton';
 import PlusButton from './components/PlusButton';
+import ThemeButton from './components/ThemeButton';
 
 function App(): JSX.Element {
   return (
@@ -16,6 +17,7 @@ function App(): JSX.Element {
         <LikeButton />
         <PlayButton />
         <PlusButton />
+        <ThemeButton />
       </View>
     </ScrollView>
   );

@@ -4,6 +4,7 @@ import {ScrollView, StatusBar, Text, View} from 'react-native';
 import LikeButton from './components/LikeButton';
 import styles from './styles';
 import PlayButton from './components/PlayButton';
+import PlusButton from './components/PlusButton';
 
 function App(): JSX.Element {
   return (
@@ -14,6 +15,7 @@ function App(): JSX.Element {
       <View style={styles.row}>
         <LikeButton />
         <PlayButton />
+        <PlusButton />
       </View>
     </ScrollView>
   );

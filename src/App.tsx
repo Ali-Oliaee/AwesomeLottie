@@ -7,6 +7,7 @@ import PlayButton from './components/PlayButton';
 import PlusButton from './components/PlusButton';
 import ThemeButton from './components/ThemeButton';
 import ThemeSwitch1 from './components/ThemeSwitch1';
+import ThemeSwitch2 from './components/ThemeSwitch2';
 
 function App(): JSX.Element {
   const [theme, setTheme] = useState<'Dark' | 'Light'>('Dark');
@@ -31,6 +32,7 @@ function App(): JSX.Element {
       </View>
       <View style={styles.row}>
         <ThemeSwitch1 setTheme={setTheme} />
+        <ThemeSwitch2 setTheme={setTheme} />
       </View>
     </ScrollView>
   );

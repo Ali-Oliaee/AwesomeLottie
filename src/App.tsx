@@ -1,9 +1,8 @@
 import React from 'react';
-import {View} from 'react-native';
-import LikeButton from './components/LikeButton';
+import NotFound from './components/404Screen';
 
 function App(): JSX.Element {
-  return <LikeButton />;
+  return <NotFound />;
 }
 
 export default App;

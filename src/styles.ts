@@ -6,7 +6,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
   },
   darkTheme: {
-    backgroundColor: '#455',
+    backgroundColor: '#040D12',
     color: '#fff',
   },
   row: {

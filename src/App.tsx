@@ -17,8 +17,8 @@ function App(): JSX.Element {
     <ScrollView
       style={[styles.container, theme === 'Dark' && styles.darkTheme]}>
       <StatusBar
-        backgroundColor={theme === 'Dark' ? '#455' : '#fff'}
-        barStyle="dark-content"
+        backgroundColor={theme === 'Dark' ? '#040D12' : '#fff'}
+        barStyle={theme === 'Light' ? 'dark-content' : 'light-content'}
       />
       <Text style={[styles.title, theme === 'Dark' && styles.darkTheme]}>
         Awesome Lottie Animations

@@ -4,7 +4,7 @@ import play from '../../assets/lottie/play.json';
 import {TouchableWithoutFeedback} from 'react-native';
 import styles from './styles';
 
-const PlayButton = () => {
+const PlayButton = ({setBearDance}: {setBearDance: (dance: boolean) => {}}) => {
   const animation = useRef<any>(null);
   const isFirstRunRef = useRef<any>(true);
   const [isPlayed, setIsPlayed] = useState<boolean>(false);
@@ -19,10 +19,12 @@ const PlayButton = () => {
       isFirstRunRef.current = false;
     } else if (isPlayed) {
       animation.current.play(19, 50);
+      setBearDance(true);
     } else {
       animation.current.play(0, 19);
+      setBearDance(false);
     }
-  }, [isPlayed]);
+  }, [isPlayed, setBearDance]);
 
   return (
     <TouchableWithoutFeedback onPress={() => setIsPlayed(!isPlayed)}>

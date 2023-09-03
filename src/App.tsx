@@ -9,6 +9,7 @@ import ThemeButton from './components/ThemeButton';
 
 function App(): JSX.Element {
   const [theme, setTheme] = useState<'Dark' | 'Light'>('Dark');
+  const [bearDance, setBearDance] = useState<boolean>(true);
 
   return (
     <ScrollView
@@ -20,10 +21,10 @@ function App(): JSX.Element {
       <Text style={[styles.title, theme === 'Dark' && styles.darkTheme]}>
         Awesome Lottie Animations
       </Text>
-      <BearScreen />
+      <BearScreen isDancing={bearDance} />
       <View style={styles.row}>
         <LikeButton />
-        <PlayButton />
+        <PlayButton setBearDance={setBearDance} />
         <PlusButton />
         <ThemeButton setTheme={setTheme} />
       </View>

@@ -2,8 +2,8 @@ import {StyleSheet} from 'react-native';
 
 const styles = StyleSheet.create({
   lottie: {
-    width: 90,
-    height: 90,
+    width: 80,
+    height: 80,
   },
 });
 

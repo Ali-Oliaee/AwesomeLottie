@@ -8,9 +8,10 @@ import PlusButton from './components/PlusButton';
 import ThemeButton from './components/ThemeButton';
 import ThemeSwitch1 from './components/ThemeSwitch1';
 import ThemeSwitch2 from './components/ThemeSwitch2';
+import PasswordInput from './components/PasswordInput';
 
 function App(): JSX.Element {
-  const [theme, setTheme] = useState<'Dark' | 'Light'>('Dark');
+  const [theme, setTheme] = useState<'Dark' | 'Light'>('Light');
   const [bearDance, setBearDance] = useState<boolean>(true);
 
   return (
@@ -34,6 +35,7 @@ function App(): JSX.Element {
         <ThemeSwitch1 setTheme={setTheme} />
         <ThemeSwitch2 setTheme={setTheme} />
       </View>
+      <PasswordInput />
     </ScrollView>
   );
 }

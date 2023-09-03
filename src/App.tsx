@@ -3,6 +3,7 @@ import BearScreen from './components/BearScreen';
 import {ScrollView, StatusBar, Text, View} from 'react-native';
 import LikeButton from './components/LikeButton';
 import styles from './styles';
+import PlayButton from './components/PlayButton';
 
 function App(): JSX.Element {
   return (
@@ -12,6 +13,7 @@ function App(): JSX.Element {
       <BearScreen />
       <View style={styles.row}>
         <LikeButton />
+        <PlayButton />
       </View>
     </ScrollView>
   );

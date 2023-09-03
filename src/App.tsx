@@ -1,8 +1,8 @@
 import React from 'react';
-import NotFound from './components/404Screen';
+import BearScreen from './components/BearScreen';
 
 function App(): JSX.Element {
-  return <NotFound />;
+  return <BearScreen />;
 }
 
 export default App;

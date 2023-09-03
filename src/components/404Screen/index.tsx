@@ -4,7 +4,7 @@ import bot from '../../assets/lottie/bot.json';
 import styles from './styles';
 import {Text, TouchableOpacity, View} from 'react-native';
 
-const NotFound = ({onBack}) => {
+const NotFound = ({onBack}: any) => {
   return (
     <View style={styles.container}>
       <LottieView source={bot} style={styles.lottie} loop={false} autoPlay />

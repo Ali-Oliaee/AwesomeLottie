@@ -25,7 +25,7 @@ const ThemeSwitch2 = ({
       animation.current.play(6, 288);
       setTheme('Dark');
     } else {
-      animation.current.play(288, 6);
+      animation.current.play(200, 6);
       setTheme('Light');
     }
   }, [isDark, setTheme]);

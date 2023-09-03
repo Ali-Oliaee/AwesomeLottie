@@ -25,6 +25,7 @@ function App(): JSX.Element {
   return (
     <>
       <ScrollView
+        showsVerticalScrollIndicator={false}
         style={[styles.container, theme === 'Dark' && styles.darkTheme]}>
         <StatusBar
           backgroundColor={theme === 'Dark' ? '#040D12' : '#fff'}

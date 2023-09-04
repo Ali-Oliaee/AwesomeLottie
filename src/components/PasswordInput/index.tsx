@@ -12,15 +12,15 @@ const PasswordInput = () => {
   useEffect(() => {
     if (isFirstRunRef.current) {
       if (isHide) {
-        animation.current.play(63, 63);
+        animation.current.play(65, 65);
       } else {
         animation.current.play(19, 19);
       }
       isFirstRunRef.current = false;
     } else if (isHide) {
-      animation.current.play(63, 63);
+      animation.current.play(65, 65);
     } else {
-      animation.current.play(0, 63);
+      animation.current.play(0, 65);
       animation.current.loop = true;
     }
   }, [isHide]);

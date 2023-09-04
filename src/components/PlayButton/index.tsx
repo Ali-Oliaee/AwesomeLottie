@@ -7,7 +7,7 @@ import styles from './styles';
 const PlayButton = ({setBearDance}: {setBearDance: (dance: boolean) => {}}) => {
   const animation = useRef<any>(null);
   const isFirstRunRef = useRef<any>(true);
-  const [isPlayed, setIsPlayed] = useState<boolean>(false);
+  const [isPlayed, setIsPlayed] = useState<boolean>(true);
 
   useEffect(() => {
     if (isFirstRunRef.current) {

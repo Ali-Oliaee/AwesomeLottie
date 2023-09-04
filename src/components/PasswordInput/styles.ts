@@ -10,6 +10,7 @@ const styles = StyleSheet.create({
     height: 54,
     alignSelf: 'center',
     position: 'relative',
+    marginTop: -40,
   },
   input: {
     height: 54,

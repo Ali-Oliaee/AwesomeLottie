@@ -18,12 +18,13 @@ const styles = StyleSheet.create({
   },
   title: {
     textAlign: 'center',
-    paddingVertical: 20,
+    paddingTop: 60,
     fontSize: 22,
     color: '#000',
   },
   homeButton: {
     marginVertical: 20,
+    marginBottom: 60,
     alignSelf: 'center',
     width: '90%',
     height: 50,
